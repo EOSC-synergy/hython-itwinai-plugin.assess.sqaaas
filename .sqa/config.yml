@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/2.2.1
+      branch: main
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/interTwin-eu/hython-itwinai-plugin:
       branch: main
@@ -15,64 +15,64 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/hython-itwinai-plugin git:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-rose-hyrax.sh
-        container: qc.acc_gamy-denim-collie
+        - /usr/bin/env sh .sqa/script.hasty-azure-cockroach.sh
+        container: qc.acc_muzzy-peach-chicken
   QC.Doc:
     repos:
       github.com/interTwin-eu/hython-itwinai-plugin find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-ivory-raccoon.sh
-        container: qc.doc_jumpy-crimson-schnauzer
+        - /usr/bin/env sh .sqa/script.pasty-saffron-birman.sh
+        container: qc.doc_leaky-rust-scorpion
       github.com/interTwin-eu/hython-itwinai-plugin git:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-blue-bulldog.sh
-        container: qc.doc_tacky-amaranth-newt
+        - /usr/bin/env sh .sqa/script.gimpy-eggplant-balinese.sh
+        container: qc.doc_cloudy-taupe-spitz
       github.com/interTwin-eu/hython-itwinai-plugin markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-green-squid.sh
-        container: qc.doc_pasty-blue-spaniel
+        - /usr/bin/env sh .sqa/script.gimpy-asparagus-sparrow.sh
+        container: qc.doc_shabby-cream-molly
   QC.Lic:
     repos:
       github.com/interTwin-eu/hython-itwinai-plugin licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-copper-javanese.sh
-        container: qc.lic_sickly-auburn-cuscus
+        - /usr/bin/env sh .sqa/script.messy-champagne-quokka.sh
+        container: qc.lic_smelly-salmon-chinchilla
   QC.Met:
     repos:
       github.com/interTwin-eu/hython-itwinai-plugin cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-amethyst-chameleon.sh
-        container: qc.met_thirsty-charcoal-capybara
+        - /usr/bin/env sh .sqa/script.scummy-azure-chinchilla.sh
+        container: qc.met_woolly-bistre-macaw
   QC.Sec:
     repos:
       github.com/interTwin-eu/hython-itwinai-plugin bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-yellow-dunker.sh
-        container: qc.sec_surly-bronze-zonkey
+        - /usr/bin/env sh .sqa/script.woolly-sapphire-cougar.sh
+        container: qc.sec_wimpy-maroon-macaw
   QC.Sty:
     repos:
       github.com/interTwin-eu/hython-itwinai-plugin flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-tangerine-chicken.sh
-        container: qc.sty_wimpy-pumpkin-zonkey
+        - /usr/bin/env sh .sqa/script.grumpy-wheat-hound.sh
+        container: qc.sty_seedy-ivory-mastiff
       github.com/interTwin-eu/hython-itwinai-plugin hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-apricot-spoonbill.sh
-        container: qc.sty_hasty-myrtle-stoat
+        - /usr/bin/env sh .sqa/script.cloudy-cornflower-emu.sh
+        container: qc.sty_lanky-wisteria-seal
       github.com/interTwin-eu/hython-itwinai-plugin jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-seashell-ray.sh
-        container: qc.sty_messy-cream-bullfrog
+        - /usr/bin/env sh .sqa/script.grumpy-fuchsia-wolfhound.sh
+        container: qc.sty_shaggy-lime-antelope
   QC.Uni:
     repos:
       github.com/interTwin-eu/hython-itwinai-plugin commands:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-heliotrope-wolverine.sh
-        container: qc.uni_wheezy-auburn-shrew
+        - /usr/bin/env sh .sqa/script.sleepy-vermilion-kakapo.sh
+        container: qc.uni_woolly-cardinal-flounder
   QC.Ver:
     repos:
       github.com/interTwin-eu/hython-itwinai-plugin get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-brass-penguin.sh
-        container: qc.ver_skinny-amethyst-axolotl
+        - /usr/bin/env sh .sqa/script.shaky-magnolia-kangaroo.sh
+        container: qc.ver_smelly-peach-tarantula
 timeout: 5400
