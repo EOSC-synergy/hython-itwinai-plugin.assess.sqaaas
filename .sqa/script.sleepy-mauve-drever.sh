@@ -5,5 +5,5 @@
 
 (
 cd github.com/interTwin-eu/hython-itwinai-plugin &&
-    hadolint Dockerfile --failure-threshold error
+    hadolint env-files/Dockerfile --failure-threshold error
 )
